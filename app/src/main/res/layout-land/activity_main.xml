@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    tools:context=".MainActivity"
+    android:background="@drawable/front_image"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="250dp"
+        android:hint="city" />
+
+    <EditText
+        android:id="@+id/country"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/city"
+        android:layout_alignStart="@id/city"
+        android:hint="country" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/getUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country"
+        android:layout_marginLeft="30dp"
+        android:layout_alignStart="@id/country"
+        android:text="get_Update" />
+</RelativeLayout>

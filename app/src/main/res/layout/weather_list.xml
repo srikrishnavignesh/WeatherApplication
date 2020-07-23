@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#4F68EB">
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="day"
+            android:textColor="@color/text_color" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/day"
+            android:layout_alignStart="@id/day" />
+
+        <TextView
+            android:id="@+id/min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img"
+            android:layout_alignLeft="@id/img"
+            android:text="min:"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img"
+            android:layout_alignRight="@id/img"
+            android:text="max:"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/min"
+            android:layout_alignStart="@id/min"
+            android:text="temp:"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/max"
+            android:layout_alignEnd="@id/max"
+            android:text="description"
+            android:textColor="@color/text_color" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
